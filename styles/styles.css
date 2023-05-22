@@ -1,0 +1,383 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  background-color: rgb(233, 232, 232);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 380px) {
+  html,
+  body {
+    display: block;
+  }
+}
+
+header {
+  width: 1440px;
+  height: 750px;
+  background-color: rgb(110, 194, 13);
+  display: flex;
+  margin: 100px auto;
+  flex-direction: column;
+  box-shadow: 1px 1px 15px rgb(92, 91, 91);
+}
+@media screen and (max-width: 1440px) {
+  header {
+    width: 370px;
+    height: auto;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 380px) {
+  header {
+    width: 100%;
+    height: auto;
+    margin: 0;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+}
+header .main-discover {
+  width: 100%;
+  height: 900px;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+@media screen and (max-width: 1440px) {
+  header .main-discover {
+    flex-direction: column;
+    height: 600px;
+  }
+}
+header main {
+  width: 90%;
+  height: auto;
+  background-image: url(/assets/desktop-image-hero-1.jpg);
+  background-repeat: no-repeat;
+  position: relative;
+}
+@media screen and (max-width: 1440px) {
+  header main {
+    width: 100%;
+    height: 60%;
+    background-image: url(/assets/mobile-image-hero-1.jpg);
+  }
+}
+header main .buttons {
+  width: 120px;
+  height: 60px;
+  background-color: black;
+  position: absolute;
+  bottom: 0;
+  right: -120px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+@media screen and (max-width: 1440px) {
+  header main .buttons {
+    right: 0;
+  }
+}
+header main .buttons img {
+  width: 20px;
+  transition: 0.1s;
+}
+header main .buttons img:hover {
+  opacity: 0.5;
+  cursor: pointer;
+}
+header main .navMobile {
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  position: absolute;
+  z-index: 100;
+  background-color: rgb(63, 59, 59);
+}
+header main .navMobile ul {
+  display: flex;
+  flex-direction: column;
+  list-style: none;
+  gap: 40px;
+}
+header main .navMobile ul img {
+  width: 55px;
+  height: 15px;
+  margin-top: 2px;
+}
+header main .navMobile ul .navbtn {
+  width: 35px;
+  height: 20px;
+  display: block;
+  position: relative;
+  left: -10px;
+  top: 14px;
+}
+header main .navMobile ul li {
+  display: block;
+  margin-left: -10px;
+}
+header main .navMobile ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header main .navMobile ul li a:hover {
+  color: rgb(126, 126, 126);
+}
+header main nav {
+  margin-top: 50px;
+}
+header main nav ul {
+  display: flex;
+  list-style: none;
+  gap: 30px;
+}
+@media screen and (max-width: 1440px) {
+  header main nav ul {
+    gap: 0;
+  }
+}
+header main nav ul img {
+  width: 55px;
+  height: 15px;
+  margin-top: 3px;
+}
+@media screen and (max-width: 1440px) {
+  header main nav ul img {
+    position: absolute;
+    top: 30px;
+    left: 160px;
+  }
+}
+header main nav ul .navbtn {
+  width: 35px;
+  height: 20px;
+  display: none;
+  position: relative;
+}
+@media screen and (max-width: 1440px) {
+  header main nav ul .navbtn {
+    display: block;
+    position: absolute;
+    left: 30px;
+    top: 30px;
+  }
+}
+@media screen and (max-width: 1440px) {
+  header main nav ul li {
+    display: none;
+  }
+}
+header main nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+header main nav ul li a:hover {
+  color: rgb(126, 126, 126);
+}
+header .discover {
+  width: 65%;
+  height: auto;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+@media screen and (max-width: 1440px) {
+  header .discover {
+    width: 100%;
+    height: 300px;
+  }
+}
+header .discover .cont-disc {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  text-align: start;
+  flex-basis: 100%;
+  flex-shrink: 0;
+}
+@media screen and (max-width: 1440px) {
+  header .discover .cont-disc {
+    height: auto;
+  }
+}
+@media screen and (max-width: 380px) {
+  header .discover .cont-disc {
+    position: relative;
+  }
+}
+header .discover .cont-disc h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 40px;
+  width: 450px;
+  padding: 0;
+  margin: 0;
+}
+@media screen and (max-width: 1440px) {
+  header .discover .cont-disc h2 {
+    width: 90%;
+    margin-right: 20px;
+    font-size: 18px;
+  }
+}
+header .discover .cont-disc p {
+  font-size: 15px;
+  padding-top: 10px;
+  margin-right: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 420px;
+  color: rgb(153, 153, 153);
+}
+@media screen and (max-width: 1440px) {
+  header .discover .cont-disc p {
+    width: 90%;
+    padding-top: 0px;
+  }
+}
+header .discover .cont-disc button {
+  background-color: transparent;
+  border: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 8px;
+  margin-right: 240px;
+  margin-top: 15px;
+}
+@media screen and (max-width: 1440px) {
+  header .discover .cont-disc button {
+    margin-top: 0;
+    margin-left: 70px;
+    font-size: 12px;
+    width: 300px;
+  }
+}
+@media screen and (max-width: 380px) {
+  header .discover .cont-disc button {
+    position: absolute;
+    margin: auto;
+    bottom: 20px;
+  }
+}
+header .discover .cont-disc button:hover {
+  cursor: pointer;
+}
+header .img-about {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(57, 167, 84);
+  display: flex;
+}
+@media screen and (max-width: 1440px) {
+  header .img-about {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+  }
+}
+header .img-about .img1 {
+  width: 30%;
+  height: 100%;
+  background-color: red;
+  background-image: url(/assets/image-about-dark.jpg);
+}
+@media screen and (max-width: 1440px) {
+  header .img-about .img1 {
+    width: 100%;
+    height: 250px;
+  }
+}
+header .img-about .about {
+  width: 40%;
+  height: 100%;
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media screen and (max-width: 1440px) {
+  header .img-about .about {
+    width: 370px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 380px) {
+  header .img-about .about {
+    width: 100%;
+  }
+}
+header .img-about .about .about-cont {
+  width: auto;
+  height: auto;
+}
+@media screen and (max-width: 1440px) {
+  header .img-about .about .about-cont {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+header .img-about .about .about-cont h2 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  width: 450px;
+  padding: 0;
+  margin-bottom: 10px;
+}
+@media screen and (max-width: 1440px) {
+  header .img-about .about .about-cont h2 {
+    width: 90%;
+    margin-right: 20px;
+    font-size: 16px;
+    margin-left: 20px;
+    letter-spacing: 0px;
+  }
+}
+header .img-about .about .about-cont p {
+  padding: 0;
+  font-size: 15px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 505px;
+  color: rgb(153, 153, 153);
+}
+@media screen and (max-width: 1440px) {
+  header .img-about .about .about-cont p {
+    width: 90%;
+    padding-top: 0px;
+  }
+}
+header .img-about .img2 {
+  width: 30%;
+  height: 100%;
+  background-color: rgb(183, 235, 202);
+  background-image: url(/assets/image-about-light.jpg);
+  background-size: c;
+  background-repeat: no-repeat;
+}
+@media screen and (max-width: 1440px) {
+  header .img-about .img2 {
+    width: 370px;
+    height: 250px;
+  }
+}
+@media screen and (max-width: 380px) {
+  header .img-about .img2 {
+    width: 100%;
+  }
+}/*# sourceMappingURL=styles.css.map */
